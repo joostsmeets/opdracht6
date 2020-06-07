@@ -1,0 +1,140 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.grid-wrap{
+    width:1080px;
+    margin: 0 auto;
+}
+nav{
+    height: 100px;
+    background-color: blue;
+    z-index: 10;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    float: left;
+    margin: 0 40px;
+    line-height: 100px;
+}
+a{
+    margin-left: 50px;
+    text-decoration: none;
+    color: white;
+}
+main{
+    padding-left: 20px;
+    margin: 0 auto;
+}
+h2{
+    font-size: 2em;
+    color: blue;
+    margin-top: 30px;
+}
+p{
+    margin-top: 30px;
+}
+.divje{
+    width: 300px;
+    height: 300px;
+    margin: 50px;
+    float: left;
+    background-color: blue;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.div2{
+    background-image: url("img_leeuw@2x.jpeg");
+}
+.clear{
+    clear: both;
+}
+.carousel{
+    width: 800px;
+}
+footer{
+    background-color: grey;
+}
+@media all and (max-width: 900px){
+    body{
+        background-color: grey;
+    }
+} 
+@media all and (max-width: 800px){
+    .divje{
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+    }
+}
+@media all and (max-width: 500px){
+    .divje{
+        float: none;
+        margin: 0 auto;
+    }
+}
+
+/* nav-panel */
+#nav-panel{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(230, 230, 255, 0.5);
+    left: -100vw;
+    top: 0;
+    z-index: 1;
+}
+
+#vert-align{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100vw;
+}
+
+#nav-panel ul li{
+    margin-bottom: 0.5em;
+    font-size: 6em;
+    font-weight: bold;
+}
+
+#nav-panel ul li a{
+    color: black;
+}
+
+#nav-panel ul li:last-of-type{
+    margin-bottom: 0;
+}
+
+/* alles mer=t jquery */
+#accoBtn{
+    height: 25px;
+    width: 70px;
+    background-color: green;
+    display: block;
+    text-align: center;
+    border-radius: 0.5cm;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: black;
+    padding-top: 5px;
+}
+#accoBtn.active{
+    height: 25px;
+    width: 70px;
+    background-color: red;
+}
+.ui-accordion-header{
+    color: grey;
+    margin-bottom: 1em;
+}
+.ui-accordion-header-active{
+    color: black;
+    margin-bottom: 1em;
+}
+.accoP{
+    margin-bottom: 30px;
+}
